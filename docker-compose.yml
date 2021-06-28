@@ -1,0 +1,21 @@
+version: '3'
+services:
+# アプリケーションコンテナ
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: slam_server_ecs2
+    image: slam_server_ecs_img
+    volumes:
+      - '.:/slam_server/'
+    environment:
+      - LC_ALL=ja_JP.UTF-8
+    expose:
+      - 5000
+    restart: always
+    tty: true
+
+volumes:
+  db_data:
+    driver: local

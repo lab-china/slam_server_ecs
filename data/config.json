@@ -1,0 +1,7 @@
+{
+    "open_mvs_path": "/usr/local/bin/OpenMVS",
+    "open_mvg_path": "/usr/local/bin",
+    "sensor_width_database": "/slam_server/data",
+    "django_server_ip_port": "http://192.168.0.91:8000",
+    "strorage_address": "s3-slam-dev"
+}
